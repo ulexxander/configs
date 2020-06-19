@@ -1,1 +1,6 @@
-Nothing interesting here, i am just saving my gulp build systems.
+to save:
+- gulpfiles
+- vscode config
+- sublime config
+- fish shell config
+...
