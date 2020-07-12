@@ -1,0 +1,5 @@
+[
+	{ "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+	{ "keys": ["ctrl+k", "ctrl+b"], "command": "build" },
+	{ "keys": ["ctrl+alt+a"], "command": "toggle_menu" },
+]
