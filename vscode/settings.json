@@ -1,21 +1,23 @@
 {
-    "window.titleBarStyle": "custom",
-    "workbench.iconTheme": "material-icon-theme",
-
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
 
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "GitHub Dark",
+
     "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
     "javascript.format.semicolons": "insert",
+
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+
     "files.exclude": {
         // "**/node_modules": true
     },
+
     "window.zoomLevel": 0,
     
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
-    "workbench.colorTheme": "GitHub Dark"
 }
