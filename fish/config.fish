@@ -8,5 +8,3 @@ end
 
 alias c='clear'
 alias x='exit'
-
-set PATH $PATH /home/ulexxander/.config/composer/vendor/bin
