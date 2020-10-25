@@ -1,23 +1,30 @@
 {
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
-
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "GitHub Dark",
-
-    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
-    "javascript.format.semicolons": "insert",
-
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-
-    "files.exclude": {
-        // "**/node_modules": true
-    },
-
-    "window.zoomLevel": 0,
-    
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
+  "editor.tabSize": 2,
+  "window.zoomLevel": 0,
+  "editor.formatOnSave": true,
+  // smooth criminal
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  // disablable
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.minimap.enabled": false,
+  // theming
+  "workbench.colorTheme": "One Monokai",
+  "workbench.iconTheme": "vscode-icons",
+  // code formatters
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.dialogStyle": "custom"
 }
