@@ -1,0 +1,22 @@
+
+function fish_greeting
+end
+
+function fish_prompt
+  set_color green
+  printf "%s> " (prompt_pwd)
+  set_color normal
+end
+
+fish_vi_key_bindings
+
+abbr c "clear"
+abbr x "exit"
+
+abbr yd "yarn dev"
+abbr gr "go run main.go"
+
+set -x JAVA_HOME "/opt/android-studio/jre"
+set -x ANDROID_SDK_ROOT "/opt/Android/Sdk"
+set -x PATH $PATH "/opt/Android/Sdk/platform-tools"
+set -x PATH $PATH "/opt/Android/Sdk/tools"
