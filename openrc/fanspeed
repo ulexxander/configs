@@ -1,0 +1,13 @@
+#!/sbin/openrc-run
+
+status() {
+  temp=`cat /sys/class/drm/card0/device/hwmon/hwmon1/temp1_input`
+  fans=`cat /sys/class/drm/card0/device/hwmon/hwmon1/pwm1`
+  echo "temp: $temp"
+  echo "fanspeed: $fans"
+}
+
+command="/usr/local/bin/fanspeed.sh"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"
+command_args="-p ${pidfile}"
