@@ -1,0 +1,8 @@
+[Unit]
+Description=AMD GPU fan speed control
+
+[Service]
+ExecStart=/usr/local/bin/fan-speed.sh
+
+[Install]
+WantedBy=multi-user.target
