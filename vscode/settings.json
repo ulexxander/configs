@@ -1,0 +1,75 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.rulers": [120],
+
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    ".env": "dotenv"
+  },
+
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "window.title": "${rootName}${separator}${activeEditorShort}${separator}${appName}",
+  "window.commandCenter": false,
+
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  "security.workspace.trust.enabled": false,
+  "extensions.ignoreRecommendations": true,
+
+  "git.confirmSync": false,
+  "git.showActionButton": {
+    "commit": false,
+    "publish": true,
+    "sync": true
+  },
+
+  "go.useLanguageServer": true,
+  "go.toolsManagement.autoUpdate": true,
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast"],
+  "go.enableCodeLens": {
+    "references": false,
+    "runtest": false
+  },
+  "go.addTags": {
+    "tags": "json",
+    "options": "",
+    "transform": "camelcase",
+    "promptForTags": true
+  },
+  "gopls": {
+    "formatting.gofumpt": true
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

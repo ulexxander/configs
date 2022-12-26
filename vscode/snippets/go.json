@@ -1,0 +1,10 @@
+{
+  "Testify Require Equal": {
+    "prefix": "treq",
+    "body": ["require.Equal(t, $1, $0)"]
+  },
+  "Testify Require No Error": {
+    "prefix": "trne",
+    "body": ["require.NoError(t, err)"]
+  }
+}

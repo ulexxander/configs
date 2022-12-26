@@ -1,0 +1,22 @@
+{
+  "Print to console": {
+    "prefix": "cl",
+    "body": ["console.log($0)"]
+  },
+  "React Functional Component Exported": {
+    "prefix": "rfc",
+    "body": [
+      "export const $TM_FILENAME_BASE: React.FC = () => {",
+      "  return $0",
+      "};"
+    ]
+  },
+  "React Functional Component Named": {
+    "prefix": "rfcn",
+    "body": ["export const $1: React.FC = () => {", "  return $0", "};"]
+  },
+  "React Functional Component Local": {
+    "prefix": "rfcl",
+    "body": ["const $1: React.FC = () => {", "  return $0", "};"]
+  }
+}
