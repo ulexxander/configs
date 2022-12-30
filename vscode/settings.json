@@ -17,6 +17,8 @@
   "window.title": "${rootName}${separator}${activeEditorShort}${separator}${appName}",
   "window.commandCenter": false,
 
+  "workbench.panel.defaultLocation": "right",
+
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
 
