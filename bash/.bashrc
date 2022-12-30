@@ -1,6 +1,8 @@
 # Extends default .bashrc provided by the distribution.
 
-export PATH="/home/$USER/go/bin:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/home/$USER/go/bin"
+
 export EDITOR="vim"
 
 alias c="clear"
