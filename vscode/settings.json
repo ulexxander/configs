@@ -33,6 +33,8 @@
     "sync": true
   },
 
+  "mdb.confirmRunAll": false,
+
   "go.useLanguageServer": true,
   "go.toolsManagement.autoUpdate": true,
   "go.lintTool": "golangci-lint",
