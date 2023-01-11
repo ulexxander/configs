@@ -1,0 +1,12 @@
+eamodio.gitlens
+EditorConfig.EditorConfig
+esbenp.prettier-vscode
+golang.go
+jeffersonlicet.snipped
+mhutchie.git-graph
+mikestead.dotenv
+mongodb.mongodb-vscode
+ms-azuretools.vscode-docker
+raidou.calc
+streetsidesoftware.code-spell-checker
+wmaurer.change-case
