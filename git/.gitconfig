@@ -1,0 +1,44 @@
+
+[user]
+  name = Alexander Ustyugov
+  # email =
+
+[init]
+  defaultBranch = main
+
+[push]
+	autoSetupRemote = true
+
+[pull]
+	rebase = false
+
+[alias]
+  co = checkout
+	cob = checkout -b
+	cm = checkout master
+	com = !git checkout master && git pull --autostash --rebase
+
+  puf = push -f
+
+  rbp = rebase -
+	rbc = rebase --continue
+	rba = rebase --abort
+	rbm = !git fetch origin master:master && git rebase master
+
+	ck = cherry-pick
+  smu = submodule update --remote --recursive
+
+  amd = commit --amend --no-edit
+	amp = !git commit --amend --no-edit && git push -f
+  rso = !git fetch origin && git reset --hard @{u}
+
+  # Requires: fzf
+	cof = !git branch --format='%(refname:short)' --sort=-committerdate --sort=-HEAD | grep -v "^$(git rev-parse --abbrev-ref HEAD)$" | fzf --height=50% | sed 's|^*||' | xargs git checkout
+
+  # For GitLab:
+	pumr = !git push -u origin "$(git rev-parse --abbrev-ref HEAD)" -o merge_request.create -o merge_request.target=master -o merge_request.remove_source_branch -o merge_request.title="$(git rev-parse --abbrev-ref HEAD)"
+
+  # Experimental:
+	# rs1 = !git reset HEAD~1
+  # putag = !git tag $1 && git push origin
+  # cpsha = !git rev-parse --short HEAD | tr -d '\n' | xclip -sel clip

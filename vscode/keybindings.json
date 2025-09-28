@@ -2,30 +2,5 @@
   {
     "key": "ctrl+k g",
     "command": "git-graph.view"
-  },
-  {
-    "key": "escape escape",
-    "command": "workbench.action.exitZenMode",
-    "when": "false && inZenMode"
-  },
-  {
-    "key": "escape escape",
-    "command": "-workbench.action.exitZenMode",
-    "when": "inZenMode"
-  },
-  {
-    "key": "ctrl+shift+g",
-    "command": "workbench.view.scm",
-    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "ctrl+shift+g g",
-    "command": "-workbench.view.scm",
-    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "ctrl+o",
-    "command": "-workbench.action.files.openFile",
-    "when": "true"
   }
 ]

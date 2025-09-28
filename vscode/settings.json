@@ -1,30 +1,49 @@
 {
+  // Text editing
   "editor.tabSize": 2,
+  "editor.fontFamily": "Monaspace Neon",
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
   "editor.rulers": [120],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.associations": {
     ".env": "dotenv"
   },
 
-  "window.dialogStyle": "custom",
-  "window.titleBarStyle": "custom",
-  "window.title": "${rootName}${separator}${activeEditorShort}${separator}${appName}",
+  // File extensions
+  "[go][sql][makefile]": {
+    "editor.tabSize": 4
+  },
+  "[dockercompose]": {
+    "editor.codeLens": false
+  },
+
+  // Smooth criminal.
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.cursorBlinking": true,
+
+  // Behavior
   "window.commandCenter": false,
-
-  "workbench.panel.defaultLocation": "right",
-
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-
   "security.workspace.trust.enabled": false,
-  "extensions.ignoreRecommendations": true,
+  "workbench.startupEditor": "none",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
 
+  // Annoying stuff
+  "chat.agent.enabled": false,
+  "chat.commandCenter.enabled": false,
+
+  // Git
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.showActionButton": {
@@ -32,49 +51,73 @@
     "publish": true,
     "sync": true
   },
+  "git.blame.editorDecoration.enabled": false,
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.ignoreTrimWhitespace": true,
 
-  "mdb.confirmRunAll": false,
+  // JS/TS
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
 
+  // Golang
   "go.useLanguageServer": true,
   "go.toolsManagement.autoUpdate": true,
-  "go.lintTool": "golangci-lint",
-  "go.lintFlags": ["--fast"],
+  "go.lintTool": "staticcheck",
   "go.enableCodeLens": {
-    "references": false,
     "runtest": false
   },
   "go.addTags": {
     "tags": "json",
     "options": "",
-    "transform": "camelcase",
-    "promptForTags": true
+    "transform": "snakecase",
+    "promptForTags": false
   },
   "gopls": {
-    "formatting.gofumpt": true
+    "formatting.gofumpt": true,
+    "analyses": {
+      "composites": false
+    }
   },
 
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[dockercompose]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  // Linux
+  "terminal.external.linuxExec": "kitty",
+  "terminal.integrated.showExitAlert": false,
+  "editor.mouseWheelScrollSensitivity": 2,
+  // Not ugly
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "window.customTitleBarVisibility": "windowed",
+
+  // Extensions
+  "extensions.ignoreRecommendations": true,
+  "mdb.mcp.server": "enabled",
+  "mdb.confirmRunAll": false,
+  "redhat.telemetry.enabled": false,
+  "cSpell.language": "en,ru"
+
+  // ====== ORPHAN ======
+  //
+  // "editor.tabCompletion": "on",
+  // "workbench.editor.showTabs": false,
+  // "workbench.editor.limit.enabled": true,
+  // "workbench.editor.limit.value": 10,
+  // "window.title": "${rootName}${separator}${activeEditorShort}${separator}${appName}",
+  // "workbench.panel.defaultLocation": "right",
+
+  // Disable copilot in terminal
+  // "workbench.editor.empty.hint": "hidden",
+  // "inlineChat.lineNaturalLanguageHint": false,
+
+  // Optimize suggestions??
+  // "editor.parameterHints.enabled": false,
+  // "editor.acceptSuggestionOnCommitCharacter": false,
+  // "editor.quickSuggestionsDelay": 1000,
+  // "editor.quickSuggestions": {
+  //   "other": false,
+  //   "comments": false,
+  //   "strings": false
+  // }
+  //
+  // ^^^^^^^^^^^^^^^^^^^
+  // ====== ORPHAN ======
 }
